@@ -17,17 +17,11 @@ sudo apt-get install -y docker-ce
 # Add current user to the docker group to avoid using sudo when running docker commands
 sudo usermod -aG docker $(whoami)
 
-# Install Docker Compose
-sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-
-# Apply executable permissions to the Docker Compose binary
-sudo chmod +x /usr/local/bin/docker-compose
-
 # Print installed versions
 echo "Docker version:"
 docker --version
 echo "Docker Compose version:"
-docker-compose --version
+docker compose version
 
 echo "Docker and Docker Compose installation completed successfully."
 
