@@ -37,12 +37,12 @@ function setup_git(){
 
 
 function setup_codeserver_vm(){
-    echo "Getting code server 1.939-vsc1.33.1 tar...";
-    (wget https://github.com/cdr/code-server/releases/download/1.1099-vsc1.33.1/code-server1.1099-vsc1.33.1-linux-x64.tar.gz);
+    echo "Getting code server v4.11.0 tar...";
+    (wget https://github.com/coder/code-server/releases/download/v4.11.0/code-server-4.11.0-linux-amd64.tar.gz);
     echo "Extracting tar...";
-    (tar -xvzf code-server1.1099-vsc1.33.1-linux-x64.tar.gz);
+    (tar -xvzf code-server-4.11.0-linux-amd64.tar.gz);
     echo "Moving code-server to bin folder...";
-    (cd code-server1.1099-vsc1.33.1-linux-x64 && mv code-server /bin && cd .. && rm -rf code-server1.1099-vsc1.33.1-linux-x64 && rm code-server1.1099-vsc1.33.1-linux-x64.tar.gz);
+    (cd code-server-4.11.0-linux-amd64 && mv code-server /bin && cd .. && rm -rf code-server-4.11.0-linux-amd64 && rm code-server-4.11.0-linux-amd64.tar.gz);
 }
 
 function setup_codeserver_service(){
