@@ -4,4 +4,10 @@
 
 (sudo apt install ./code-server_*_amd64.deb);
 
+(sudo systemctl start code-server@$USER);
+
+(sudo systemctl enable --now code-server@$USER);
+
 (nano ~/.config/code-server/config.yaml);
+
+
