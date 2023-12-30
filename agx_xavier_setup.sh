@@ -1,5 +1,5 @@
 #install CUDA
-
+sudo apt-get install apt-utils;
 sudo apt-get install curl;
 
 sudo apt install cuda-toolkit-11-4;
