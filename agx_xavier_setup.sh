@@ -1,5 +1,7 @@
 #install CUDA
 
+sudo apt-get install curl;
+
 sudo apt install cuda-toolkit-11-4;
 
 export PATH=/usr/local/cuda-11.4/bin:$PATH;
