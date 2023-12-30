@@ -19,4 +19,6 @@ nvcc --version;
 
 nvidia-container-runtime -v;
 
+head -n 1 /etc/nv_tegra_release;
+
 
