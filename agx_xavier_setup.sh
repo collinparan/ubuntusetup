@@ -21,4 +21,5 @@ nvidia-container-runtime -v;
 
 head -n 1 /etc/nv_tegra_release;
 
+docker run -it --rm --gpus all nvcr.io/nvidia/l4t-base:r32.4.4;
 
