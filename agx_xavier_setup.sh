@@ -21,9 +21,5 @@ nvidia-container-runtime -v;
 
 head -n 1 /etc/nv_tegra_release;
 
-docker run -it --rm --gpus all nvcr.io/nvidia/l4t-base:r32.4.4;
-
-sudo docker run -it --rm --gpus all --net=host --runtime nvidia -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix nvcr.io/nvidia/l4t-base:r35.1.0;
-
 docker run -it --rm --gpus all --net=host --runtime nvidia -e DISPLAY=$DISPLAY -v /tmp/.X11-unix/:/tmp/.X11-unix dustynv/l4t-text-generation:r35.4.1;
 
