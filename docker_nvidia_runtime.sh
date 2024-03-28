@@ -55,3 +55,5 @@ echo "Restarting Docker to apply changes..."
 sudo systemctl restart docker
 
 echo "Docker has been configured to use NVIDIA as the default runtime."
+sudo nvidia-container-runtime -v
+sudo cat /etc/docker/daemon.json
